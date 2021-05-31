@@ -74,8 +74,18 @@ load.bsgenome <- function (genome) {
     org <- Mmusculus
   }
 
+  if (genome == 'mm9r') {
+    library (BSgenome.Mmusculus.UCSC.mm9.masked)
+    org <- Mmusculus
+  }
+
   if (genome == 'mm10') {
     library (BSgenome.Mmusculus.UCSC.mm10)
+    org <- Mmusculus
+  }
+
+  if (genome == 'mm10r') {
+    library (BSgenome.Mmusculus.UCSC.mm10.masked)
     org <- Mmusculus
   }
 
